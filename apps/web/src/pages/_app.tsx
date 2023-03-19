@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 
+import { trpc } from '../trpc';
+
 import type { AppProps } from 'next/app';
 import type { FC } from 'react';
 
@@ -10,4 +12,4 @@ const App: FC<AppProps> = ({
   return <Component {...pageProps} />;
 };
 
-export default App;
+export default trpc.withTRPC(App);
