@@ -1,3 +1,5 @@
+import 'modern-normalize/modern-normalize.css';
+
 import '../styles/globals.css';
 
 import { trpc } from '../trpc';
