@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-import type { FC } from 'react';
+import type { NextComponentType } from 'next';
+import type { DocumentContext, DocumentInitialProps, DocumentProps } from 'next/document';
 
-const Document: FC = () => {
+const Document: NextComponentType<DocumentContext, DocumentInitialProps, DocumentProps> = () => {
   return (
     <Html lang="en">
       <Head />
