@@ -4,6 +4,10 @@ import { merge } from 'webpack-merge';
 import type { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
+  staticDirs: [
+    './public',
+    '../public',
+  ],
   stories: [
     '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
