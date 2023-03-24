@@ -84,7 +84,9 @@
         }],
         "@typescript-eslint/consistent-type-imports": ["error", {
           "prefer": "type-imports"
-        }]
+        }],
+        "import/default": "off",
+        "import/named": "off"
       }
     },
     {
@@ -95,6 +97,12 @@
       "env": {
         "jest": true
       },
+      "extends": [
+        "plugin:jest/recommended"
+      ],
+      "plugins": [
+        "jest"
+      ],
       "rules": {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/prefer-ts-expect-error": "off"

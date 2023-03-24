@@ -18,7 +18,7 @@ const preview: Preview = {
   decorators: [
     (story, { component }) => {
       const page: PageComponent = story;
-      if ('getLayout' in component) {
+      if (component && 'getLayout' in component) {
         page.getLayout = component.getLayout as PageComponent['getLayout'];
       }
 

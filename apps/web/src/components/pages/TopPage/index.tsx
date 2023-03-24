@@ -6,7 +6,7 @@ const TopPage: PageComponent = () => {
   return (
     <div className={styles.wrapper}>
       <span>
-        Hello
+        Hello&nbsp;
       </span>
       <em className={styles.emphasis}>
         World !

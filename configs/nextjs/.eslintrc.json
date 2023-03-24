@@ -3,5 +3,21 @@
     "./node_modules/@ts-dmmf/config-common/.eslintrc.json",
     "next/core-web-vitals",
     "plugin:storybook/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.test.{js,jsx,ts,tsx}",
+        "**/__tests__/**"
+      ],
+      "extends": [
+        "plugin:jest-dom/recommended",
+        "plugin:testing-library/react"
+      ],
+      "plugins": [
+        "jest-dom",
+        "testing-library"
+      ]
+    }
   ]
 }

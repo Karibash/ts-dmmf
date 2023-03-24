@@ -11,7 +11,7 @@ import type { AppContext, AppProps as NextAppProps, AppInitialProps } from 'next
 import type { ReactElement, ReactNode } from 'react';
 
 export type PageComponent<P = Record<string, unknown>> = NextPage<P> & {
-  getLayout?: (page: ReactElement) => ReactNode;
+  getLayout?: ((page: ReactElement) => ReactNode) | undefined;
 };
 
 export type AppProps = NextAppProps & {
