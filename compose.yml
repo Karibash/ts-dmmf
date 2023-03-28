@@ -1,0 +1,18 @@
+services:
+  mysql:
+    build: ./docker/mysql
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/mysql/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: database
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      TZ: 'Asia/Tokyo'
+
+volumes:
+  mysql-data:
+    driver: 'local'
