@@ -9,7 +9,7 @@
     "build:storybook": "storybook build",
     "start": "next start",
     "test": "jest",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "msw": {
     "workerDirectory": ".storybook/public"

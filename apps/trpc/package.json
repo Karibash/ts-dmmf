@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@trpc/server": "10.16.0",
     "superjson": "1.12.2",
