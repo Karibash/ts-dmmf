@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "@ts-dmmf/dotenv",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "find-up": "6.3.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@ts-dmmf/config-nodejs": "workspace:*",
+    "@types/node": "18.15.3",
+    "eslint": "8.36.0",
+    "tsup": "6.7.0",
+    "typescript": "5.0.2"
+  }
+}
