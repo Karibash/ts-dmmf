@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "@ts-dmmf/config-nodejs",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@ts-dmmf/config-common": "workspace:*",
+    "@tsconfig/node-lts": "18.12.1",
+    "eslint": "8.36.0",
+    "typescript": "5.0.2"
+  }
+}
