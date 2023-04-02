@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@ts-dmmf/dmmf",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "velona": "0.7.0"
+  },
+  "devDependencies": {
+    "@ts-dmmf/config-nodejs": "workspace:*",
+    "@types/node": "18.15.3",
+    "eslint": "8.36.0",
+    "tsup": "6.7.0",
+    "typescript": "5.0.2"
+  }
+}
