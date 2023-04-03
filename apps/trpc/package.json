@@ -10,6 +10,7 @@
   "dependencies": {
     "@paralleldrive/cuid2": "2.2.0",
     "@trpc/server": "10.16.0",
+    "@ts-dmmf/database": "workspace:*",
     "@ts-dmmf/dmmf": "workspace:*",
     "bcrypt": "5.1.0",
     "fp-ts": "2.13.1",

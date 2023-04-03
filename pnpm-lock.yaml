@@ -21,6 +21,7 @@ importers:
       '@paralleldrive/cuid2': 2.2.0
       '@trpc/server': 10.16.0
       '@ts-dmmf/config-common': workspace:*
+      '@ts-dmmf/database': workspace:*
       '@ts-dmmf/dmmf': workspace:*
       '@types/bcrypt': 5.0.0
       '@types/node': 18.15.3
@@ -33,6 +34,7 @@ importers:
     dependencies:
       '@paralleldrive/cuid2': 2.2.0
       '@trpc/server': 10.16.0
+      '@ts-dmmf/database': link:../../packages/database
       '@ts-dmmf/dmmf': link:../../packages/dmmf
       bcrypt: 5.1.0
       fp-ts: 2.13.1
@@ -200,6 +202,7 @@ importers:
     specifiers:
       '@prisma/client': 4.12.0
       '@ts-dmmf/config-nodejs': workspace:*
+      '@types/node': 18.15.3
       eslint: 8.36.0
       prisma: 4.12.0
       tsup: 6.7.0
@@ -208,6 +211,7 @@ importers:
       '@prisma/client': 4.12.0_prisma@4.12.0
     devDependencies:
       '@ts-dmmf/config-nodejs': link:../../configs/nodejs
+      '@types/node': 18.15.3
       eslint: 8.36.0
       prisma: 4.12.0
       tsup: 6.7.0_typescript@5.0.2

@@ -3,10 +3,10 @@ import {
   registerUserUseCaseInput,
   registerUserUseCaseOutput,
 } from '../../usecases/users/registerUserUseCase';
-import { t } from '../core/trpc';
+import { procedure, t } from '../core/trpc';
 
 export const usersRouter = t.router({
-  register: t.procedure
+  register: procedure
     .input(registerUserUseCaseInput)
     .output(registerUserUseCaseOutput)
     .mutation(({ input }) => registerUserUseCase(input)),
