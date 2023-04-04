@@ -8,9 +8,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  transpilePackages: [
-    '@ts-dmmf/trpc',
-  ],
 };
 
 module.exports = withVanillaExtract(nextConfig);
