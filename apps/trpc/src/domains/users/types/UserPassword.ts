@@ -1,5 +1,5 @@
+import { hashSync } from '@node-rs/bcrypt';
 import { createNominal } from '@ts-dmmf/dmmf';
-import { hashSync } from 'bcrypt';
 import { z } from 'zod';
 
 import type { Nominal } from '@ts-dmmf/dmmf';
@@ -21,5 +21,5 @@ export const toUserPassword = (value: string): UserPassword => {
 export type HashedUserPassword = Nominal<'HashedUserPassword', string>;
 
 export const toHashedUserPassword = (value: UserPassword): HashedUserPassword => {
-  return createNominal('HashedUserPassword', hashSync(value, 12));
+  return createNominal('HashedUserPassword', hashSync(value));
 };
