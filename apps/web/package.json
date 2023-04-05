@@ -20,6 +20,7 @@
     "@trpc/next": "10.16.0",
     "@trpc/react-query": "10.16.0",
     "@trpc/server": "10.16.0",
+    "@ts-dmmf/graphql": "workspace:*",
     "@ts-dmmf/trpc": "workspace:*",
     "@vanilla-extract/css": "1.10.0",
     "isomorphic-unfetch": "3.1.0",
